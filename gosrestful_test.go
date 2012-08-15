@@ -11,16 +11,16 @@ type GoSRestful struct {
 
 func (gorestful *GoSRestful) Create(goSRestfulPara *GoSRestfulPara) {
 
-	fmt.Fprintf(*goSRestfulPara.w, "Create id:" + goSRestfulPara.para["id"])
+	fmt.Fprintf(goSRestfulPara.W, "Create id:" + goSRestfulPara.Para["id"])
 }
 func (gorestful *GoSRestful) Delete(goSRestfulPara *GoSRestfulPara) {
-	fmt.Fprintf(*goSRestfulPara.w, "Delete id:" + goSRestfulPara.para["id"])
+	fmt.Fprintf(goSRestfulPara.W, "Delete id:" + goSRestfulPara.Para["id"])
 }
 func (gorestful *GoSRestful) Update(goSRestfulPara *GoSRestfulPara) {
-	fmt.Fprintf(*goSRestfulPara.w, "Update id:" + goSRestfulPara.para["id"])
+	fmt.Fprintf(goSRestfulPara.W, "Update id:" + goSRestfulPara.Para["id"])
 }
 func (gorestful *GoSRestful) Get(goSRestfulPara *GoSRestfulPara) {
-	fmt.Fprintf(*goSRestfulPara.w, "Get id:" + goSRestfulPara.para["id"])
+	fmt.Fprintf(goSRestfulPara.W, "Get id:" + goSRestfulPara.Para["id"])
 }
 
 func TestCreate(t *testing.T) {
