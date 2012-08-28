@@ -26,6 +26,6 @@ func (gorestful *GoSRestful) Get(goSRestfulPara *GoSRestfulPara) {
 func TestCreate(t *testing.T) {
 	gsrrun := new(GoSRestfulRun)
 	gsr := new(GoSRestful)
-	gsrrun.AddURIProcess("/{id}/{test}/", gsr)
+	gsrrun.AddURIProcess("index", "/{id}/{test}/", gsr)
 	gsrrun.ListenAndServe("localhost:8080")
 }
